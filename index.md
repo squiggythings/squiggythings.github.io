@@ -6,11 +6,11 @@
 <p>(Games description)</p>
 
 <h2>Dream Dining: Disco!</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>(Dream Dining Disco description)</p>
 
 <h2>Cabra</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pqednm-uVrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/pqednm-uVrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>(Cabra description)</p>
 
 <h2>Noreidia</h2>
