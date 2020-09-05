@@ -3,20 +3,18 @@
 ---
 
 ### Games 
+<p>(Games description)</p>
 
-[](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<h2>Dream Dining: Disco!</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>(Dream Dining Disco description)</p>
 
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<h2>Cabra</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pqednm-uVrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>(Cabra description)</p>
 
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
+<h2>Noreidia</h2>
+<p>(Noreidia description)</p>
 ### Music
 <p>(Music description)</p>
 
@@ -33,5 +31,4 @@
 
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
 <!-- Remove above link if you don't want to attibute -->
