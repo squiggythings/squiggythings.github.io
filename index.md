@@ -1,5 +1,5 @@
-### Games 
-<p>(Games description)</p>
+### GamesAAA
+(Games description)
 
 # Dream Dining: Disco!
 <iframe width="420" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -13,7 +13,7 @@
 (Noreidia description)
 
 ### Music
-<p>Almost all music is chiptune music, done in Famitracker 0CC.</p>
+Almost all music is chiptune music, done in Famitracker 0CC.
 
 # Pirate Pearl
 Pirate Pearl is a light-hearted RPG platformer by another developer, which I wrote the soundtrack for. This is the main gameplay loop, which is what the player hears for most of the duration of the game.
