@@ -5,16 +5,16 @@
 ### Games 
 <p>(Games description)</p>
 
-<h2>Dream Dining: Disco!</h2>
+#Dream Dining: Disco!
 <iframe width="420" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>(Dream Dining Disco description)</p>
 
-<h2>Cabra</h2>
+#Cabra
 <iframe width="420" height="315" src="https://www.youtube.com/embed/pqednm-uVrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>(Cabra description)</p>
 
-<h2>Noreidia</h2>
-<p>(Noreidia description)</p>
+#Noreidia
+(Noreidia description)
 ### Music
 <p>Almost all music is chiptune music, done in Famitracker 0CC.</p>
 
