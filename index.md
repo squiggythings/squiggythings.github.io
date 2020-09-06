@@ -1,4 +1,4 @@
-### GamesAAA
+### Games
 (Games description)
 
 # Dream Dining: Disco!
