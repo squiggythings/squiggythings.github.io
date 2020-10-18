@@ -1,10 +1,8 @@
 ---
 title: Games & Music
 ---
-
-## Games
-(Games description)
-
+ 
+---
 ### Dream Dining: Disco!
 <iframe width="420" height="315" src="https://www.youtube.com/embed/J5qicULEyyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Dream Dining: Disco! is a very small experimental arcade game combining rhythm, and cooking elements. The player must serve a burger the correct customer order, but every input has to be on-beat with the music. The goal is to serve as many customers as accurately as possible before the song ends. This is one of the games I made in Scratch, before moving on to Unity Development.  
