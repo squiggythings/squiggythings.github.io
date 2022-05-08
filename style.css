@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: large;
+  color: white;
+}
+
+body {
+  background-image: url("bg.png");
+  background-color: #202b53;
+  background-size: 128px;
+  background-position: center;
+  border: 0px solid white;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+article {
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  padding: 0 20px 20px;
+}
+
+article h1 {
+  margin: 0;
+  padding: 0;
+}
+
+article p {
+  text-align: justify;
+  line-height: 1.5em;
+}
+.music_box {
+  margin: auto;
+  margin-top: 25px;;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 3px solid white;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: white;
+  padding: 10px;
+  max-width: 900px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.cat_on_drums {
+  width: 264px;
+  height: 168px;
+  background-image: url(cat.gif);
+  margin: 40px auto;
+}
+.music_box_info {
+  margin: 0px 0px 0px 0px;
+  padding: 0 15px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.music_box_info h2 {
+  font-size: 36px;
+  margin: 0px;
+  padding: 0;
+  color: #143464;
+}
+
+.music_box_info h3 {
+  /* font-size: 3px; */
+  margin: 0px;
+  padding: 0;
+  color: #9fa7c2;
+}
+
+.music_box_info h3 a{
+  color:#9fa7c2;
+}
+
+.music_box_info p {
+  text-align: left;
+  line-height: 1.5em;
+
+  color: #143464;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  color: #849be4;
+}
+a {
+  text-decoration: none;
+  color: #47baf3;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+}
