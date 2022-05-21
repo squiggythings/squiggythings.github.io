@@ -17,6 +17,51 @@ body {
   position: relative;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 680px;
+}
+
+footer{
+  margin-top: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: #143464;
+
+  margin: 4px 4px;
+  border: 3px solid white;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.35);
+  backdrop-filter: contrast(120%);
+  backdrop-filter: hue-rotate(50deg);
+
+  background: linear-gradient(to bottom, #cf138700 50%, white 50%);
+  background-size: 100% 235%;
+  background-position: right bottom;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: white;
+  box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.5);
+
+  border: 3px solid rgba(202, 127, 186, 0.268);
+  text-decoration: none;
+  font-weight: 500;
+  background-position: 0px -3px;
+  transition: all 0.25s ease;
+}
+
 article {
   text-align: center;
   margin: auto;
@@ -35,7 +80,7 @@ article p {
 }
 .music_box {
   margin: auto;
-  margin-top: 25px;;
+  margin-top: 25px;
   display: flex;
   flex-direction: column-reverse;
   border: 3px solid white;
@@ -77,8 +122,8 @@ article p {
   color: #9fa7c2;
 }
 
-.music_box_info h3 a{
-  color:#9fa7c2;
+.music_box_info h3 a {
+  color: #9fa7c2;
 }
 
 .music_box_info p {
