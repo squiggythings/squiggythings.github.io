@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | Trenton Bridge</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #FFFFFF"></canvas>
+    <canvas
+      id="unity-canvas"
+      width="1280"
+      height="720"
+      style="width: 1280px; height: 720px; background: #ffffff"
+    ></canvas>
     <script src="Build/trenton-bridge.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
+        var meta = document.createElement("meta");
+        meta.name = "viewport";
+        meta.content =
+          "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
+        document.getElementsByTagName("head")[0].appendChild(meta);
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -31,47 +37,54 @@
     </script>
     <div>
       <h1>Bridging the Gap</h1>
-<h2>An Interactive Exporation of the Trenton Bridge</h2>
-<br>
-<h4>Created By:</h4>
-Elias Ananiadis - Executive Programmer, Executive Audio Engineer
-<br> Makensy Kelly - Executive Illustrator
-<br> Valeria Hernández - Executive Illustrator
-<br> Ally Vavrek - Executive Illustrator
+      <h2>An Interactive Exporation of the Trenton Bridge</h2>
+      <br />
+      <h4>Created By:</h4>
+      Elias Ananiadis - Executive Programmer, Executive Audio Engineer
+      <br />
+      Makensy Kelly - Executive Illustrator <br />
+      Valeria Hernández - Executive Illustrator <br />
+      Ally Vavrek - Executive Illustrator
 
-<br>
-      <div style="text-align: left;">
-<h4>References:</h4>
-Aubrey, Dan. “The Bridge That Made Trenton and World History.” Community
-News, 3 Aug. 2022,
-www.communitynews.org/princetoninfo/coverstories/the-bridge-that-madetrenton-and-world-history/article_29acb314-1293-11ed-9a99-1b7d6465da
-3b.html.
-<br>
-<br>Eshow. “What's the Real Meaning behind ‘Trenton Makes the World Takes’?” 94.5
-PST, 26 Nov. 2018,
-wpst.com/whats-the-real-meaning-behind-trenton-makes-the-world-takes/.
-Griggs, Frank, et al. “Trenton Bridge: First Bridge across the Delaware River.”
-STRUCTURE Magazine, www.structuremag.org/?p=1713.
-<br>
-<br>“Lower Trenton Bridge.” Lower Trenton Bridge (Trenton Makes The World Takes
-Bridge (Lower Trenton Toll-Supported Bridge)) - HistoricBridges.org,
-historicbridges.org/bridges/browser/?bridgebrowser=newjersey%2Flowertr
-entonbridge%2F.
-<br>
-<br>“Lower Trenton Toll-Supported Bridge.” DRJTBC,
-www.drjtbc.org/bridges/lower-trenton-bridge/#:~:text=The%20original%20
-bridge%20at%20the,remained%20in%20service%20until%201876.
-<br>
-<br>“Trenton Makes the World Takes Sign Lighting.” DRJTBC,
-www.drjtbc.org/bridge-info/trenton-makes-the-world-takes-sign#:~:text=Ac
-cording%20to%20an%20article%20in,the%20end%20pointing%20toward
-%20Trenton.
+      <br />
+      <div style="text-align: left">
+        <h4>References:</h4>
+        Aubrey, Dan. “The Bridge That Made Trenton and World History.” Community
+        News, 3 Aug. 2022,
+        www.communitynews.org/princetoninfo/coverstories/the-bridge-that-madetrenton-and-world-history/article_29acb314-1293-11ed-9a99-1b7d6465da
+        3b.html.
+        <br />
+        <br />Eshow. “What's the Real Meaning behind ‘Trenton Makes the World
+        Takes’?” 94.5 PST, 26 Nov. 2018,
+        wpst.com/whats-the-real-meaning-behind-trenton-makes-the-world-takes/.
+        Griggs, Frank, et al. “Trenton Bridge: First Bridge across the Delaware
+        River.” STRUCTURE Magazine, www.structuremag.org/?p=1713.
+        <br />
+        <br />“Lower Trenton Bridge.” Lower Trenton Bridge (Trenton Makes The
+        World Takes Bridge (Lower Trenton Toll-Supported Bridge)) -
+        HistoricBridges.org,
+        historicbridges.org/bridges/browser/?bridgebrowser=newjersey%2Flowertr
+        entonbridge%2F.
+        <br />
+        <br />“Lower Trenton Toll-Supported Bridge.” DRJTBC,
+        www.drjtbc.org/bridges/lower-trenton-bridge/#:~:text=The%20original%20
+        bridge%20at%20the,remained%20in%20service%20until%201876.
+        <br />
+        <br />“Trenton Makes the World Takes Sign Lighting.” DRJTBC,
+        www.drjtbc.org/bridge-info/trenton-makes-the-world-takes-sign#:~:text=Ac
+        cording%20to%20an%20article%20in,the%20end%20pointing%20toward
+        %20Trenton.
 
-<br>Griggs, Francis E. “Theodore Burr’s Trenton Bridge.” Practice Periodical on Structural Design and Construction, vol. 20, no. 2, 3 Apr. 2014, https://doi.org/10.1061/(asce)sc.1943-5576.0000217. 
-<br>
-<br>Griggs, Frank. “Trenton Bridge: First Bridge across the Delaware River.” STRUCTURE Magazine, Mar. 2014, https://www.structuremag.org/?p=1713. 
-<br>
-<br>“Lower Trenton Toll-Supported Bridge.” DRJTBC, https://www.drjtbc.org/bridges/lower-trenton-bridge/#:~:text=The%20original%20bridge%20at%20the,remained%20in%20service%20until%201876. 
+        <br />Griggs, Francis E. “Theodore Burr’s Trenton Bridge.” Practice
+        Periodical on Structural Design and Construction, vol. 20, no. 2, 3 Apr.
+        2014, https://doi.org/10.1061/(asce)sc.1943-5576.0000217.
+        <br />
+        <br />Griggs, Frank. “Trenton Bridge: First Bridge across the Delaware
+        River.” STRUCTURE Magazine, Mar. 2014,
+        https://www.structuremag.org/?p=1713.
+        <br />
+        <br />“Lower Trenton Toll-Supported Bridge.” DRJTBC,
+        https://www.drjtbc.org/bridges/lower-trenton-bridge/#:~:text=The%20original%20bridge%20at%20the,remained%20in%20service%20until%201876.
       </div>
     </div>
   </body>
