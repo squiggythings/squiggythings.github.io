@@ -1,2 +1,2 @@
-#eliasananiadis.com
+# eliasananiadis.com
 Elias Ananiadis' web portfolio
