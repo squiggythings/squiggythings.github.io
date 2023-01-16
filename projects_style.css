@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: "Kreon", "Open Sans", sans-serif; */
+  font-family: Kreon, "Kreon", "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #0c1c6d;
+  font-size: 30px;
+
+  margin: 0;
+  height: 100%;
+
+  background-color: hsl(36, 70%, 91%);
+  /* background-color: #ffffff; */
+}
+
+header {
+  text-align: center;
+}
+header img {
+  padding: 0px;
+  margin-top: 40px;
+
+  width: 90%;
+  max-width: 738px;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 65px;
+}
+
+.backButton {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 100px;
+  margin-top: 90px;
+}
+
+article img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  /* border-color: #de9e7b;
+  border-width: 4px;
+  border-radius: 6px;
+  border-style: solid; */
+  filter: drop-shadow(4px 4px 0px #de9e7b);
+}
+
+article .sc_embed {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  /* border-color: #de9e7b;
+  border-width: 4px;
+  border-radius: 6px;
+  border-style: solid; */
+  filter: drop-shadow(4px 4px 0px #de9e7b);
+}
+article section {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: calc(100% - 50px);
+  max-width: 600px;
+  display: inline-block;
+  vertical-align: middle;
+}
+article section h2 {
+  margin-top: 0px;
+  margin-bottom: -15px;
+}
+article section p {
+  font-size: 28px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+
+a img:active {
+  transform: scale(1.015, 1.015);
+}
+.topButton {
+  margin-bottom: 10px;
+}
+
+hr {
+  max-width: 400px;
+  height: 35px;
+  border: 0 none;
+  /* background-color: #de9d7b; */
+  background-image: url("_images/hr.png");
+}
+
+nav a img:hover {
+  transform: scale(1.12, 1.12);
+}
+nav a img:active {
+  transform: scale(1.18, 1.18);
+}
+
+footer a {
+  font-size: 20px;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #ff5277;
+}
+
+a:active {
+  color: #4fa4b8;
+}
+
+button {
+  background-color: #00000000;
+  border: none;
+  font-family: Kreon, "Kreon", "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #ff5277;
+  text-decoration: underline;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button:active {
+  color: #4fa4b8;
+}

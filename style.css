@@ -1,0 +1,116 @@
+body {
+  /* font-family: "Kreon", "Open Sans", sans-serif; */
+  font-family: Kreon, "Kreon", "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #0c1c6d;
+  font-size: 30px;
+
+  margin: 0;
+  height: 100%;
+
+  background-color: hsl(36, 70%, 91%);
+  /* background-color: #ffffff; */
+}
+
+header {
+  text-align: center;
+}
+header img {
+  padding: 0px;
+  margin-top: 40px;
+
+  width: 90%;
+  max-width: 738px;
+}
+
+body {
+  text-align: center;
+}
+
+section {
+  line-height: 250px;
+}
+
+section img {
+  max-width: 200px;
+  margin: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 400px;
+}
+
+@media (max-width: 750px) {
+  section img {
+    max-width: 100px;
+    margin: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+.social div {
+  margin-left: 10px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social p {
+  text-align: left;
+  width: 350px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social img {
+  max-width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+nav img {
+  max-width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+a img:active {
+  transform: scale(1.015, 1.015);
+}
+
+nav a img:hover {
+  transform: scale(1.12, 1.12);
+}
+nav a img:active {
+  transform: scale(1.18, 1.18);
+}
+
+footer a {
+  font-size: 20px;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #ff5277;
+}
+
+a:active {
+  color: #4fa4b8;
+}
