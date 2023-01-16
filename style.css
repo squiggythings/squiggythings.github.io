@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Kreon;
+  src: url(Kreon-VariableFont_wght.ttf);
+}
+
+
 body {
   /* font-family: "Kreon", "Open Sans", sans-serif; */
   font-family: Kreon, "Kreon", "Open Sans", sans-serif;
@@ -47,10 +53,10 @@ section p {
 
 @media (max-width: 750px) {
   section img {
-    max-width: 100px;
+    max-width: 80px;
     margin: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .social div {
