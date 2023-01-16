@@ -100,7 +100,7 @@ hr {
   height: 35px;
   border: 0 none;
   /* background-color: #de9d7b; */
-  background-image: url("_images/hr.png");
+  background-image: url("hr.png");
 }
 
 nav a img:hover {
