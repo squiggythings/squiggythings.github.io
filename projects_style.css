@@ -41,6 +41,9 @@ h1 {
   font-size: 65px;
   font-weight: 500;
 }
+h2 {
+  font-weight: 400;
+}
 
 .backButton {
   margin-bottom: 40px;
@@ -144,4 +147,13 @@ button {
 
 button:active {
   color: #4fa4b8;
+}
+@media (max-width: 750px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 400;
+  }
 }

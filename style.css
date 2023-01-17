@@ -48,17 +48,6 @@ section p {
   max-width: 400px;
 }
 
-@media (max-width: 750px) {
-  section img {
-    max-width: 80px;
-    margin: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  section p {
-    font-size: 20px;
-  }
-}
 .social div {
   margin-left: 10px;
   line-height: 1.5;
@@ -107,7 +96,25 @@ nav a img:active {
 footer a {
   font-size: 20px;
 }
-
+@media (max-width: 750px) {
+  section img {
+    max-width: 120px;
+    margin: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  section p {
+    font-size: 25px;
+    max-width: 230px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 600;
+  }
+}
 a,
 a:link,
 a:visited,
