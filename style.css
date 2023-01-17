@@ -96,7 +96,7 @@ nav a img:active {
 footer a {
   font-size: 20px;
 }
-@media (max-width: 750px) {
+@media (max-width: 726px) {
   section img {
     max-width: 120px;
     margin: 30px;
@@ -112,9 +112,10 @@ footer a {
   h3,
   h4,
   h5 {
-    font-weight: 600;
+    font-weight: 400;
   }
 }
+
 a,
 a:link,
 a:visited,

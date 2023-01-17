@@ -148,7 +148,14 @@ button {
 button:active {
   color: #4fa4b8;
 }
-@media (max-width: 750px) {
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+@media (max-width: 726px) {
   h1,
   h2,
   h3,
