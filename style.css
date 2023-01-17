@@ -3,7 +3,6 @@
   src: url(Kreon-VariableFont_wght.ttf);
 }
 
-
 body {
   /* font-family: "Kreon", "Open Sans", sans-serif; */
   font-family: Kreon, "Kreon", "Open Sans", sans-serif;
@@ -33,8 +32,6 @@ body {
   text-align: center;
 }
 
-
-
 section img {
   max-width: 200px;
   margin: 40px;
@@ -57,6 +54,9 @@ section p {
     margin: 30px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+  section p {
+    font-size: 20px;
   }
 }
 .social div {
