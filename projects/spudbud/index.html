@@ -12,7 +12,7 @@
       height="720"
       style="width: 1280px; height: 720px; background: #231f20"
     ></canvas>
-    <script src="Build/Web Build.loader.js"></script>
+    <script src="Build/spudbud.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -24,9 +24,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Web Build.data.br",
-        frameworkUrl: "Build/Web Build.framework.js.br",
-        codeUrl: "Build/Web Build.wasm.br",
+        dataUrl: "Build/spudbud.data",
+        frameworkUrl: "Build/spudbud.framework.js",
+        codeUrl: "Build/spudbud.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Spud",
