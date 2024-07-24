@@ -102,8 +102,81 @@
                         <td style="padding-left: 20px">Default rows per frame</td>
                         <td>The default frame length for any new module.</td>
                     </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Default number of channels</td>
+                        <td>The default channel count for any new module.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Default author name</td>
+                        <td>The default author name for any new module.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Default row highlight primary</td>
+                        <td>The default primary row highlight for any new module.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Default row highlight secondary</td>
+                        <td>The default secondary row highlight for any new module.</td>
+                    </tr>
                 </table>
-                
+
+                <br />
+                <h2>Pattern Editor</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 230px">Setting</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Pattern editor</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Show row numbers in hex</td>
+                        <td>Display row numbers in hexadecimal instead of decimal</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Show note off/release as text</td>
+                        <td>Display note off and release events as OFF and REL</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Fade volume column</td>
+                        <td>Fades the numbers in the volume column according to their value</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Show previous/next frames</td>
+                        <td>Displays the next and previous frames as greyed out in the pattern editor</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Ignore step when moving</td>
+                        <td>Ignore the step value in edit settings when moving the cursor. Only use it when inputting values</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Step after numeric input</td>
+                        <td>
+                            Defines cursor movement behavior when inputting numbers.<br/>
+                            Always: Cursor always steps. This behaves like FastTracker or Famitracker<br/>
+                            At the end of a cell: Both digits of a column have to be typed before the cursor steps down. This behaves like ImpulseTracker<br/>
+                            After cell, including effect: Same as the above except effects are treated as a single 3 digit column.<br/>
+                            Never: The cursor never steps down automatically. Must click into new cells manually. This behaves like ModplugTracker.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Wrap cursor horizontally</td>
+                        <td>Moving the cursor past the first or last channel will wrap around to the other side</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Key repeat</td>
+                        <td>Enable key repetition when inputting notes and values</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Page jump amount</td>
+                        <td>How many rows the cursor jumps when scrolling</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Restore channel state on playback</td>
+                        <td>Reconstruct the current channel's state from previous frames upon playing</td>
+                    </tr>
+                </table>
                 <br />
                 <h2>Samples/Waves</h2>
                 <table border="1" cellpadding="3px" class="panel">
@@ -112,44 +185,113 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td style="font-weight: bold; border-right: 0px">Sample settings</td>
+                        <td style="font-weight: bold; border-right: 0px">Sample import settings</td>
                     </tr>
                     <tr>
-                        <td style="padding-left: 20px">Normalize samples on import</td>
-                        <td>Automatically set a sample's volume to be as loud as possible when importing</td>
+                        <td style="padding-left: 20px">Automatically normalize samples on import</td>
+                        <td>Automatically makes each new sample have the same volume</td>
                     </tr>
                     <tr>
-                        <td style="padding-left: 20px">Trim sample silence on import</td>
+                        <td style="padding-left: 20px">Automatically trim sample silence on import</td>
                         <td>Automatically trim any silence before and after a sample when importing</td>
                     </tr>
                     <tr>
-                        <td style="padding-left: 20px">Resample to 44.1 kHz on import</td>
-                        <td>If a sample is not 44.1 kHz, resample it to preserve its pitch</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 20px">Preview samples in browser</td>
+                        <td style="padding-left: 20px">Automatically preview samples in browser</td>
                         <td>Plays audio files upon clicking on them in the sample browser</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Include samples in visualizer by default</td>
-                        <td>If this is enabled, samples will be included in the piano roll visualizer by default</td>
+                        <td>New samples will have 'Include in visualizer' checked off automatically</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Default base key</td>
-                        <td>The base MIDI note value of any new sample. 48 (C-4) is the default</td>
+                        <td>The default base key value of any new sample</td>
                     </tr>
                     <tr>
                         <td style="font-weight: bold; border-right: 0px">Resampling</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Default wave resample mode</td>
-                        <td>Determines the default resampling algorithm that waves in new songs will have</td>
+                        <td>The default resampling algorithm that waves in new modules will have</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Default sample resample mode</td>
-                        <td>Determines the default resampling algorithm that new samples will have when imported</td>
+                        <td>The default resampling algorithm that new samples will have</td>
                     </tr>
                 </table>
+                <br />
+                <h2>MIDI</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 230px">Setting</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">MIDI</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Input device</td>
+                        <td>The MIDI device to receive inputs from, connect a MIDI device and select it here to begin using MIDI input.</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Transpose</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">MIDI transpose</td>
+                        <td>The number of semitones to transpose incoming midi notes</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Apply octave transpose</td>
+                        <td>Transpose incoming midi messages by the current octave in Edit Settings</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">MIDI messages</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Record note velocity</td>
+                        <td>If this is enabled, the velocity of a note press in edit mode will be recorded in the volume column</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Use program change to select instrument</td>
+                        <td>If this is enabled, a midi controller with program change functionality can be used to select instruments</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Receive play/stop messages</td>
+                        <td>If this is enabled, a midi controller with PLAY/STOP buttons will control tracker playback</td>
+                    </tr>
+                </table>
+
+                <br />
+                <h2>Audio</h2>
+                <table border="1" cellpadding="3px" class="panel">
+                    <tr valign="top">
+                        <th style="width: 230px">Setting</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Audio</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Output device</td>
+                        <td>The audio output device to use. Select "(default)" to use the system's audio device.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Volume</td>
+                        <td>The output master volume</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Sample rate</td>
+                        <td>The output sample rate of WaveTracker</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Oversampling</td>
+                        <td>Higher values will reduce high frequency aliasing artefacts, at the expense of higher CPU usage. Turn this down if audio is stuttering</td>
+                    </tr>
+                </table>
+
                 <br />
                 <h2>Visualizer</h2>
                 <table border="1" cellpadding="3px" class="panel">
@@ -158,11 +300,11 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td style="font-weight: bold; border-right: 0px">Visualizer: Piano</td>
+                        <td style="font-weight: bold; border-right: 0px">Piano</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Note speed</td>
-                        <td>Determines how fast notes scroll by in the piano roll. Lower values are slower</td>
+                        <td>How fast notes scroll by in the piano roll; lower values are slower</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Change note width by volume</td>
@@ -173,7 +315,11 @@
                         <td>If this is enabled, notes fade out as they get softer</td>
                     </tr>
                     <tr>
-                        <td style="font-weight: bold; border-right: 0px">Visualizer: Oscilloscopes</td>
+                        <td style="padding-left: 20px">Highlight pressed keys</td>
+                        <td>If this is enabled, currently playing notes will be highlighted on the keyboard itself</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Oscilloscopes</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Wave zoom</td>
@@ -181,14 +327,29 @@
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Colorful waves</td>
-                        <td>If this is enabled, each oscilloscope window will use the same color as their notes in the
-                            piano roll; Otherwise, they are white.</td>
+                        <td>If this is enabled, each oscilloscope window will use the same color as their notes in the piano roll</td>
                     </tr>
                     <tr>
                         <td style="padding-left: 20px">Wave thickness</td>
-                        <td>Determines the thickness with which the waves are drawn in the oscilloscope</td>
+                        <td>Determines the thickness in pixels of each oscilloscope's wave</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Crosshairs</td>
+                        <td>Determines how crosshairs should be drawn in the center of each oscilloscope</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Oscilloscope borders</td>
+                        <td>Draws white borders around each oscilloscope</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; border-right: 0px">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px">Draw in maximum resolution</td>
+                        <td>Draws the visualizer directly to the back buffer for higher resolution</td>
                     </tr>
                 </table>
+
                 <br />
 
                 <footer>
