@@ -1,130 +1,135 @@
 @font-face {
-  font-family: Kreon;
-  src: url(Kreon-VariableFont_wght.ttf);
+    font-family: Kreon;
+    src: url(Kreon-VariableFont_wght.ttf);
 }
 
 body {
-  /* font-family: "Kreon", "Open Sans", sans-serif; */
-  font-family: Kreon, "Kreon", "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #0c1c6d;
-  font-size: 30px;
+    /* font-family: "Kreon", "Open Sans", sans-serif; */
+    font-family: Kreon, "Kreon", "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #0c1c6d;
+    font-size: 30px;
 
-  margin: 0;
-  height: 100%;
+    margin: 0;
+    height: 100%;
 
-  background-color: hsl(36, 70%, 91%);
-  /* background-color: #ffffff; */
+    background-color: hsl(36, 70%, 91%);
+    /* background-color: #ffffff; */
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #b8508f;
 }
 
 header {
-  text-align: center;
+    text-align: center;
 }
 header img {
-  padding: 0px;
-  margin-top: 40px;
+    padding: 0px;
+    margin-top: 40px;
 
-  width: 90%;
-  max-width: 738px;
+    width: 90%;
+    max-width: 738px;
 }
 h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 body {
-  text-align: center;
+    text-align: center;
 }
 
 section img {
-  max-width: 200px;
-  margin: 30px;
-  margin-right: 50px;
-  margin-left: 50px;
-  display: inline-block;
-  vertical-align: middle;
+    max-width: 200px;
+    margin: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 section p {
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 400px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 400px;
 }
 
 .social div {
-  margin-left: 10px;
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
+    margin-left: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social p {
-  text-align: left;
-  width: 350px;
-  display: inline-block;
-  vertical-align: middle;
+    text-align: left;
+    width: 350px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social img {
-  max-width: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 nav img {
-  max-width: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 a img:active {
-  transform: scale(1.015, 1.015);
+    transform: scale(1.015, 1.015);
 }
 
 nav a img:hover {
-  transform: scale(1.12, 1.12);
+    transform: scale(1.12, 1.12);
 }
 nav a img:active {
-  transform: scale(1.18, 1.18);
+    transform: scale(1.18, 1.18);
 }
 
 footer a {
-  font-size: 20px;
+    font-size: 20px;
 }
 @media (max-width: 726px) {
-  section img {
-    max-width: 120px;
-    margin: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  section p {
-    font-size: 25px;
-    max-width: 230px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: 400;
-  }
+    section img {
+        max-width: 120px;
+        margin: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    section p {
+        font-size: 25px;
+        max-width: 230px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 400;
+    }
 }
 
 a,
 a:link,
 a:visited,
 a:active {
-  color: #ff5277;
+    color: #ff5277;
 }
 
 a:active {
-  color: #4fa4b8;
+    color: #4fa4b8;
 }
