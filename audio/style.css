@@ -115,7 +115,6 @@ article .image-container {
   border-width: 4px;
   border-radius: 6px;
   border-style: solid; */
-    filter: drop-shadow(4px 4px 0px #de9e7b);
 }
 
 article .sc_embed {
@@ -157,7 +156,7 @@ article .sc_embed {
     text-align: center;
     flex: 2 1 0px;
     margin: 0;
-    padding: 25px 10px;
+    padding: 25px 21px;
     filter: drop-shadow(4px 4px 0px #de9e7b);
 }
 
