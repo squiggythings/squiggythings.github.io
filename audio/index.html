@@ -46,6 +46,30 @@
         <br />
         <h1>Projects</h1>
         <!-- <div class="backButton"><a href="/">[ back ]</a></div> -->
+
+        <article>
+            <div class="image-container">
+                <img src="audio/insignia.jpg" alt="Insignia header" />
+                <img src="audio/insignia_screenshot.jpg" alt="Insignia screenshot" />
+            </div>
+            <section>
+                <h2>Insignia</h2>
+                <p>
+                    Insignia is an upcoming action adventure game by Uppon Hill. I am the lead sound designer on the
+                    project, responsible for all of the audio asset design and implementation.
+                </p>
+                <p>We use FMOD Studio to integrate the audio into the game engine, Unity.</p>
+                <p>
+                    I also help design and develop tooling to allow for an easier audio workflow for both myself and the
+                    game's composer, such as C# scripts extending FMOD's built in spatializer functionality to allow for
+                    greater control over distance attenuation for certain objects, and a system that lets us easily
+                    assign background music and ambience tracks to scenes, which play seamlessly without having to write
+                    any additional code.
+                </p>
+            </section>
+        </article>
+        <hr />
+
         <article>
             <iframe
                 src="https://www.youtube.com/embed/aWQvBOXa0dU?si=2y2FFInOy-v67k35"
@@ -74,29 +98,6 @@
         <hr />
 
         <article>
-            <div class="image-container">
-                <img src="audio/insignia.jpg" alt="Insignia header" />
-                <img src="audio/insignia_screenshot.jpg" alt="Insignia screenshot" />
-            </div>
-            <section>
-                <h2>Insignia</h2>
-                <p>
-                    Insignia is an upcoming action adventure game by Uppon Hill. I am the lead sound designer on the
-                    project, responsible for all of the audio asset design and implementation.
-                </p>
-                <p>We use FMOD Studio to integrate the audio into the game engine, Unity.</p>
-                <p>
-                    I also help design and develop tooling to allow for an easier audio workflow for both myself and the
-                    game's composer, such as C# scripts extending FMOD's built in spatializer functionality to allow for
-                    greater control over distance attenuation for certain objects, and a system that lets us easily
-                    assign background music and ambience tracks to scenes, which play seamlessly without having to write
-                    any additional code.
-                </p>
-            </section>
-        </article>
-        <hr />
-
-        <article>
             <iframe
                 src="https://www.youtube.com/embed/rP1uzyQ9y8U?si=x2LIaFM0DJWVrI9-"
                 title="YouTube video player"
@@ -110,24 +111,9 @@
                     you can drag around the squids to arrange notes in a sequence, and press play to hear it. On the
                     right are various settings and effects that change the synth's sound.<br />Any knob can be automated
                     by sticking one of the 4 starfish onto it.<br />The sound engine is a simple FM synthesizer
-                    controlled by an ADSR volume envelope.
+                    controlled by an ADSR volume envelope. Each effect (distortion, delay, and bitcrush) can be
+                    rearranged by dragging them to change the order in which they are applied.
                 </p>
-            </section>
-        </article>
-        <hr />
-
-        <article>
-            <img src="crosley.png" alt="Crosley Singing Machines screenshot" />
-            <section>
-                <h2>Crosley Singing Machines</h2>
-                <p>
-                    An interactive piece made for the Trenton Free Public Library. Each machine was historically made by
-                    the Crosley Machine Company, and all made unique sounds. The machines can be turned on and off to
-                    create a small rhythm.
-                    <br />
-                    Made with Unity, all graphics drawn in Aseprite, and audio assembled in FL Studio 20.
-                </p>
-                <a href="projects/crosley-machines/">> Launch "Crosley Singing Machines"</a>
             </section>
         </article>
         <hr />
@@ -155,6 +141,15 @@
         </article>
         <hr />
 
+        <h1>Additional Projects</h1>
+        <div class="bio">
+            <p>
+                The following are other projects I've made that aren't strictly about audio, but still contain some
+                audio programming and/or sound design.
+            </p>
+        </div>
+        <hr />
+
         <article>
             <img src="water_pipe_organ.png" alt="Water-Pipe Organ screenshot" />
             <section>
@@ -172,14 +167,22 @@
         </article>
         <hr />
 
-        <h1>Additional Projects</h1>
-        <div class="bio">
-            <p>
-                The following are other projects I've made that aren't strictly about audio, but still contain some
-                audio programming and/or sound design.
-            </p>
-        </div>
+        <article>
+            <img src="crosley.png" alt="Crosley Singing Machines screenshot" />
+            <section>
+                <h2>Crosley Singing Machines</h2>
+                <p>
+                    An interactive piece made for the Trenton Free Public Library. Each machine was historically made by
+                    the Crosley Machine Company, and all made unique sounds. The machines can be turned on and off to
+                    create a small rhythm.
+                    <br />
+                    Made with Unity, all graphics drawn in Aseprite, and audio assembled in FL Studio 20.
+                </p>
+                <a href="projects/crosley-machines/">> Launch "Crosley Singing Machines"</a>
+            </section>
+        </article>
         <hr />
+
         <article>
             <iframe
                 src="https://www.youtube.com/embed/BPr8emvQaEc?si=_9XGZuRyppqa0Um-"
@@ -196,24 +199,6 @@
             </section>
         </article>
         <hr />
-
-        <article>
-            <img src="goo.png" alt="Goo screenshot" />
-            <section>
-                <h2>Goo</h2>
-                <p>
-                    Goo is a p5.js experiment with an alternative way to tell time, using a tactile "touch"
-                    experience.<br />
-                    The goo starts out very soft and malleable and gets firmer and more volatile as the day goes on.
-                    You're able to get a rough idea of what time it is only by interacting with the goo and listening to
-                    the sound it makes.<br />How solid it feels indicates how late in the day it is, and the pitch of
-                    the sound indicates how far into the hour it is.
-                </p>
-                <a href="projects/goo/">> Launch Goo</a>
-            </section>
-        </article>
-        <hr />
-
         <article>
             <iframe
                 src="https://www.youtube.com/embed/VhHaaPC-KtM?si=HVCDE96ildjw9sYz"
@@ -253,6 +238,23 @@
                     The game features a custom soundbank manager to load and play files with minimal memory footprint.
                 </p>
                 <a href="https://squiggygames.itch.io/mini-tanks">> Play Mini Tanks on itch.io</a>
+            </section>
+        </article>
+        <hr />
+
+        <article>
+            <img src="goo.png" alt="Goo screenshot" />
+            <section>
+                <h2>Goo</h2>
+                <p>
+                    Goo is a p5.js experiment with an alternative way to tell time, using a tactile "touch"
+                    experience.<br />
+                    The goo starts out very soft and malleable and gets firmer and more volatile as the day goes on.
+                    You're able to get a rough idea of what time it is only by interacting with the goo and listening to
+                    the sound it makes.<br />How solid it feels indicates how late in the day it is, and the pitch of
+                    the sound indicates how far into the hour it is.
+                </p>
+                <a href="projects/goo/">> Launch Goo</a>
             </section>
         </article>
         <hr />
