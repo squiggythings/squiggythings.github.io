@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Elias Ananiadis - Sound Designer</title>
+        <base href="/" />
+        <link rel="stylesheet" type="text/css" href="sound/style.css" />
+        <meta
+            name="description"
+            content="Elias Ananiadis is a sound designer for games with over 6 years of experience, specializing in tonal, synth-driven design, alongside a strong programming background."
+        />
+        <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.65" />
+        <script async src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+        <!-- <script src="sketch.js"></script> -->
+        <script async src="sound/sketch.js"></script>
+    </head>
+
+    <body>
+        <div class="background-left"></div>
+        <div class="background-right"></div>
+        <header id="reel">
+            <img src="sound/logo.png" alt="Elias Ananiadis" />
+            <!-- <div>
+                    <h1>ELIAS ANANIADIS</h1>
+                    <h2>Composer & Sound Designer</h2>
+                </div> -->
+        </header>
+        <nav>
+            <div class="background">
+                <ul>
+                    <a href="sound/#reel" class="nav-link">REEL</a>
+                    ·
+                    <a href="sound/#bio" class="nav-link">BIO</a>
+                    ·
+                    <a href="sound/#redesigns" class="nav-link">REDESIGNS</a>
+                    ·
+                    <a href="sound/#contact" class="nav-link">CONTACT</a>
+                </ul>
+            </div>
+            <div class="border-bottom"></div>
+        </nav>
+        <div>
+            <main id="canvasContainer"></main>
+            <div class="content wave-bg">
+                <div style="padding: 56.25% 0 0 0; position: relative">
+                    <iframe
+                        src="https://player.vimeo.com/video/1135827332?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                        title="Elias Ananiadis - Sound Design Reel"
+                    ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <h4 class="email">contact.eliasananiadis@gmail.com</h4>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <section id="bio">
+            <div class="border-top"></div>
+            <div class="background">
+                <div class="content">
+                    <div class="bio">
+                        <aside>
+                            <img style="border-radius: 100%" src="gamedev/headshot.png" />
+                        </aside>
+                        <article>
+                            <h2>BIO</h2>
+                            <hr />
+                            <p>Hi, I’m Elias, a sound designer from New Jersey.</p>
+                            <p>
+                                I have over 6 years of experience in sound design & audio implementation for games. I
+                                specialize in tonal, synth-driven design, and with a strong programming background I
+                                love building robust systems for incredibly adaptive game audio.
+                            </p>
+                            <p>
+                                Currently, I am working on the upcoming action-adventure title,
+                                <a href="https://store.steampowered.com/app/1127370/Insignia/">Insignia</a> by Uppon
+                                Hill.
+                            </p>
+                            <p>
+                                I am also the creator of the open source chiptune music making software,
+                                <a href="https://wavetracker.org">WaveTracker</a>.
+                            </p>
+                            <p>When I'm not working, I enjoy cooking, making music, and watching movies.</p>
+                        </article>
+                    </div>
+                    <hr class="dotted" />
+                    <div class="skills">
+                        <h4>Main Skills:</h4>
+                        <p>
+                            Sound Design, FMOD, Unity, C#, Wwise, Reaper, FL Studio, iZotope RX 11, Software
+                            Synthesizers, Field Recording
+                        </p>
+                    </div>
+                    <hr class="dotted" />
+                    <div class="skills">
+                        <h4>Additional Skills:</h4>
+                        <p>DSP Engineering, MaxMSP, C++, Adobe After Effects, Davinci Resolve, Figma, Ableton Live</p>
+                    </div>
+                    <hr class="dotted" />
+
+                    <div class="column-container">
+                        <div class="column">
+                            <div class="games">
+                                <h5>Favorite Games For Sound:</h5>
+                                <ul>
+                                    <li>Celeste</li>
+                                    <li>APE OUT</li>
+                                    <li>Animal Crossing: New Horizons</li>
+                                    <li>Machinarium</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="games">
+                                <h5>Favorite Games Lately:</h5>
+                                <ul>
+                                    <li>Hollow Knight: Silksong</li>
+                                    <li>Balatro</li>
+                                    <li>Animal Well</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom"></div>
+        </section>
+        <br />
+        <div class="content">
+            <div id="insignia"></div>
+            <br />
+            <br />
+            <br />
+            <h2 style="font-size: 64px; text-align: center">INSIGNIA</h2>
+            <hr />
+            <article class="project">
+                <div class="project-description">
+                    <div style="text-align: center">
+                        <img src="audio/insignia_screenshot.jpg" alt="Insignia header" />
+                    </div>
+                    <h3>Insignia</h3>
+                    <p>
+                        Insignia is an upcoming action-adventure RPG by Uppon Hill. I am responsible for all of the
+                        audio design and implementation via FMOD and Unity.
+                    </p>
+                    <p>
+                        I also assist in the design and development of tooling to allow for an easier audio workflow for
+                        our team, such as C# scripts extending FMOD's built in spatializer functionality to allow for
+                        greater control over distance attenuation behavior, and a system that lets us easily assign
+                        background music and ambience tracks to scenes.
+                    </p>
+                </div>
+            </article>
+            <div id="redesigns"></div>
+            <br />
+            <br />
+            <br />
+            <h2 style="font-size: 64px; text-align: center">REDESIGNS</h2>
+            <hr />
+            <article class="project">
+                <div class="project-video">
+                    <div style="padding: 56.25% 0 0 0; position: relative">
+                        <iframe
+                            src="https://player.vimeo.com/video/1135849623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                            title="Elias Ananiadis - A Short Hike Redesign"
+                        ></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="project-description">
+                    <h3>A Short Hike</h3>
+                    <p>
+                        This redesign is focused on creating a cozy, relaxed, nature soundscape to match the pace of A
+                        Short Hike's easygoing gameplay.
+                    </p>
+                    <p>
+                        It is mostly a linear redesign, except for the character dialogue sounds. I recreated the game's
+                        text engine in Unity, implemented the sounds with FMOD, then recorded the output. The character
+                        dialogue sounds you hear are actually produced in-engine.
+                    </p>
+                </div>
+            </article>
+            <hr class="dotted" />
+            <article class="project">
+                <div class="project-video">
+                    <div style="padding: 56.25% 0 0 0; position: relative">
+                        <iframe
+                            src="https://player.vimeo.com/video/1135856171?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                            title="Elias Ananiadis - The Messenger Redesign"
+                        ></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="project-description">
+                    <h3>The Messenger - Glacial Peak</h3>
+                    <p>
+                        All of these sounds were sequenced entirely in Famitracker with the VRC6 expansion chip with no
+                        additional processing (apart from the howling wind ambience).<br />
+                        They are hardware accurate to the Nintendo Famicom, which is the same system that The Messenger
+                        pays homage to in its graphics and music.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <section id="contact">
+            <div class="border-top"></div>
+            <div class="background">
+                <div class="content">
+                    <h2>CONTACT</h2>
+                    <hr />
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8613a268-bb30-4b94-a00c-d17a29cfe6fa" />
+                        <div class="forminput">
+                            <input type="text" placeholder="Name" name="name" required />
+                        </div>
+                        <div class="forminput">
+                            <input type="email" placeholder="Email" name="email" required />
+                        </div>
+                        <div class="forminput">
+                            <textarea name="message" placeholder="Message..." required></textarea>
+                        </div>
+                        <div style="text-align: center">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <footer>
+                    <ul>
+                        <a href="https://www.linkedin.com/in/elias-ananiadis-23a087295/" class="social">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="mailto:contact.eliasananiadis@gmail.com" class="social">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                                />
+                            </svg>
+                        </a>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+    </body>
+</html>
