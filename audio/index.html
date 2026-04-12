@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Elias Ananiadis - Game Audio Programmer</title>
+        <title>Elias Ananiadis - Audio Tools Programmer</title>
         <base href="/" />
         <link rel="stylesheet" type="text/css" href="audio/style.css" />
         <meta name="description" content="Elias Ananiadis' audio work and projects" />
@@ -23,16 +23,14 @@
                     <p>Hi, I’m Elias, an audio programmer from New Jersey.</p>
 
                     <p>
-                        I have over 6 years of experience in game development and audio. With a strong programming
-                        background, I love to build robust systems for incredibly adaptive game audio.
+                        I have over 3 years of experience in game development and audio, with a strong focus on building C#-based audio tools, systems, and real-time DSP pipelines for games. I enjoy working on the technical side of game audio—developing the underlying systems that power adaptive music, sound design workflows, and in-engine audio behaviour.
                     </p>
                     <p>
-                        Currently, I am working on audio for the upcoming action-adventure title, Insignia by
-                        <a href="https://upponhill.com/">Uppon Hill</a>.
+                        My most recent work includes audio development for Insignia by <a href="https://upponhill.com/">Uppon Hill</a>.
                     </p>
                     <p>
-                        I am also the creator of the open source chiptune music production software,
-                        <a href="https://wavetracker.org">WaveTracker</a>.
+                        I am also the creator of the standalone audio tool and synthesis engine,
+                        <a href="https://WaveTracker.org">WaveTracker</a>.
                     </p>
                 </div>
             </div>
@@ -42,34 +40,10 @@
             </p>
         </div>
 
-        <hr />
         <br />
-        <h1>Projects</h1>
-        <!-- <div class="backButton"><a href="/">[ back ]</a></div> -->
-
-        <article>
-            <div class="image-container">
-                <img src="audio/insignia.jpg" alt="Insignia header" />
-                <img src="audio/insignia_screenshot.jpg" alt="Insignia screenshot" />
-            </div>
-            <section>
-                <h2>Insignia</h2>
-                <p>
-                    Insignia is an upcoming action adventure game by Uppon Hill. I am the lead sound designer on the
-                    project, responsible for all of the audio asset design and implementation.
-                </p>
-                <p>We use FMOD Studio to integrate the audio into the game engine, Unity.</p>
-                <p>
-                    I also help design and develop tooling to allow for an easier audio workflow for both myself and the
-                    game's composer, such as C# scripts extending FMOD's built in spatializer functionality to allow for
-                    greater control over distance attenuation for certain objects, and a system that lets us easily
-                    assign background music and ambience tracks to scenes, which play seamlessly without having to write
-                    any additional code.
-                </p>
-            </section>
-        </article>
+        <h1>Tools & Systems</h1>
         <hr />
-
+        <!-- <div class="backButton"><a href="/">[ back ]</a></div> -->
         <article>
             <iframe
                 src="https://www.youtube.com/embed/aWQvBOXa0dU?si=2y2FFInOy-v67k35"
@@ -81,21 +55,70 @@
             <section>
                 <h2>WaveTracker</h2>
                 <p>
-                    An advanced chiptune music software, WaveTracker lets the user draw in up to 100 custom sound waves,
-                    and use them in up to 100 custom instrument presets. It also features 24 sound channels, a noise
-                    generator for drums, a multitude of effects, importing and editing audio samples, and a built-in
-                    song visualizer.
+                    Wave tracker is a standalone audio tool and synthesis engine that I created to explore new ways of making music. It features a unique interface where you can draw waveforms directly onto a canvas to create sounds, and then manipulate the sound with various effects and modulation options. It's a fun and intuitive way to create digital sounds without needing much prior knowledge of music theory or synthesis.
                 </p>
+                <p>It is written entirely in C#, with a custom built audio and DSP engine of up to 24 independent channels. Each channel has the capability to act as a sampler, wavetable synth, or noise generator.</p>
                 <p>
-                    There are lots of cool digital signal processing effects under the hood, such as frequency
-                    modulation between two waves, lowpass filters and global downsampling, and even a custom "smart"
-                    resampling mode that reacts to the drawn wave to preserve crispness for sharper waves but not be too
-                    harsh for smoother waves.
+                    Since its release, WaveTracker has been used by a variety of musicians and game developers to create unique sounds and music for their projects. It has gained a reputation for being one of the more intuitive tools in the chiptune music software space and it's also open source, so anyone can contribute to its development or customize it for their own needs.
                 </p>
-                <a href="https://wavetracker.org">> wavetracker.org</a>
             </section>
         </article>
         <hr />
+        <article>
+            <img src="https://wavetracker.org/visualizer_mode.gif"/>
+            <section>
+                <h2>WaveTracker - Visualizer</h2>
+                <p>
+                    WaveTracker features a visualizer that provides real-time feedback on the audio output. The visualizer displays the waveform of each channel, as well as a piano roll that shows the notes being played. This allows users to see how their drawn waveforms and modulation settings are affecting the sound, making it easier to understand and refine their creations.
+                </p>
+                <p>
+                    Wavetracker is often touted as having one of the best visualizers in the chiptune music software space, due to it's oscilloscopes and a piano roll being built in to the software itself, rather than forcing users to rely on third party software for visual feedback.
+                </p>
+            </section>
+        </article>
+        <hr />
+        <article>
+            <div class="image-container">
+                <img src="audio/hapticseditor.gif" alt="Insignia Haptics Editor" />
+            </div>
+            <section>
+                <h2>Gamepad Haptics Editor</h2>
+                <p>
+                    The haptics editor I built for Insignia allows designers to easily author and preview controller haptics patterns. It features a custom envelope editor to arrange complex motor behavior, and a real-time preview mode that sends the haptics data to the controller as you edit.<br>
+                    It was built into Unity using C#, and the haptics data is sent to the controller using Rewired.
+                </p>
+                <p>Since modern controller haptics are taken care of via direct audio signals, this tool allows backwards compatibility with older controllers by pairing the haptics event with dual motor envelopes.</p>
+            </section>
+        </article>
+        <hr />
+        
+        <article>
+            <div class="image-container">
+                <img src="audio/dual ambience.gif" alt="Insignia 2D Ambience Controller" />
+            </div>
+            <section>
+                <h2>2D Ambience Controller </h2>
+                <p>
+                    For Insignia, I created a custom 2D ambience controller to allow designers to easily author how background ambience tracks play. Since ambiences are attached to the scene, this tool allows for the scene to "float" between two ambience tracks depending on the listener's position between the two nodes. This is incredibly useful for scenes that transition between two distinct in-game biomes.
+                </p>
+                <p>The system has the added benefit of continuing the current ambience track if the next scene is part of the same environment, resulting in a completely seamless listening experience.</p>
+                <p>In this example the designer has created a smooth transition between a lush forest ambience and a windy valley ambience depending on the listener's altitude.</p>
+            </section>
+        </article>
+        <hr />
+        
+        <article>
+            <div class="image-container">
+                <img src="audio/enemy vocals.gif" alt="Insignia Enemy-Vocalization Manager" />
+            </div>
+            <section>
+                <h2>Enemy-Vocalization Manager</h2>
+                <p>
+                    Insignia's enemies have various vocalizations that play in different situations, such as when they spot the player, attack, or die. I built a custom vocalization manager that automatically silences already playing vocalizations when a new one needs to play. This preserves the clarity of important vocalizations, such as attack telegraph vocals that plays when an enemy spots the player, which is crucial for gameplay feedback.
+                </p>
+                <p>This entire system is completely hands off, requiring no manual intervention from designers once set up.Any sounds attached to the enemy's game object are automatically managed by the system.</p>
+            </section>
+        </article>
 
         <article>
             <iframe
@@ -107,8 +130,8 @@
             <section>
                 <h2>Fish Synth</h2>
                 <p>
-                    An educational toy/tool to teach young children about synthesis and music theory.<br />On the left
-                    you can drag around the squids to arrange notes in a sequence, and press play to hear it. On the
+                    An educational tool/toy to teach young children about synthesis and music theory.<br />On the left
+                    the user can drag around the squids to arrange notes in a sequence, and press play to hear it. On the
                     right are various settings and effects that change the synth's sound.<br />Any knob can be automated
                     by sticking one of the 4 starfish onto it.<br />The sound engine is a simple FM synthesizer
                     controlled by an ADSR volume envelope. Each effect (distortion, delay, and bitcrush) can be
@@ -130,8 +153,7 @@
                 <h2>Abyss Demo</h2>
                 <p>
                     A short platformer made to showcase adaptive music & audio systems. I drew all the graphics and
-                    programmed the gameplay, but this project is mainly meant to show off the dynamic sound design and
-                    score.
+                    programmed the gameplay, but this project is mainly meant to show off a dynamic soundscape and music system.
                     <br />
                     Here, I created a bunch of C# components to allow me to easily author spatial ambience sounds and
                     slightly randomize sound events. There is also an adaptive music system that changes the arrangement
@@ -141,129 +163,13 @@
         </article>
         <hr />
 
-        <h1>Additional Projects</h1>
-        <div class="bio">
-            <p>
-                The following are other projects I've made that aren't strictly about audio, but still contain some
-                audio programming and/or sound design.
-            </p>
-        </div>
-        <hr />
-
-        <article>
-            <img src="water_pipe_organ.png" alt="Water-Pipe Organ screenshot" />
-            <section>
-                <h2>Water-Pipe Organ</h2>
-                <p>
-                    Inspired by Wintergatan's marble machine and Daisuke Amaya's "Rain", the pipes will drip water onto
-                    the instruments to play a song: ("Yakan Kouro" by fox capture plan). You can click the faucets to
-                    turn on and off the different instruments. Silence an instrument and then click above it to play
-                    along for yourself.
-                    <br />Graphics drawn in Aseprite, and the whole thing was coded in p5.js. The arrangement of "Yakan
-                    Kouro" I made in Famitracker 0CC and then imported the stems as .txt files into the project.
-                </p>
-                <a href="projects/water-pipe-organ/">> Launch Water-Pipe Organ</a>
-            </section>
-        </article>
-        <hr />
-
-        <article>
-            <img src="crosley.png" alt="Crosley Singing Machines screenshot" />
-            <section>
-                <h2>Crosley Singing Machines</h2>
-                <p>
-                    An interactive piece made for the Trenton Free Public Library. Each machine was historically made by
-                    the Crosley Machine Company, and all made unique sounds. The machines can be turned on and off to
-                    create a small rhythm.
-                    <br />
-                    Made with Unity, all graphics drawn in Aseprite, and audio assembled in FL Studio 20.
-                </p>
-                <a href="projects/crosley-machines/">> Launch "Crosley Singing Machines"</a>
-            </section>
-        </article>
-        <hr />
-
-        <article>
-            <iframe
-                src="https://www.youtube.com/embed/BPr8emvQaEc?si=_9XGZuRyppqa0Um-"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
-            <section>
-                <h2>Street Pool</h2>
-                <p>
-                    A stylized first person implementation of pool that takes place on a city street. Made in Unity.<br />
-                </p>
-            </section>
-        </article>
-        <hr />
-        <article>
-            <iframe
-                src="https://www.youtube.com/embed/VhHaaPC-KtM?si=HVCDE96ildjw9sYz"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
-            <section>
-                <h2>Penguin Surfing</h2>
-                <p>
-                    A small infinite runner game where you play as a penguin surfing on the sea. Jump on fish to gain
-                    points, and avoid rocks. Made in Unity with handmade graphics and sound effects.
-                </p>
-                <p>
-                    The surfing sound is dependent on the velocity and direction of the player movement, which makes for
-                    a much more natural gameplay experience.
-                </p>
-            </section>
-        </article>
-        <hr />
-
-        <article>
-            <img
-                src="https://img.itch.zone/aW1hZ2UvMTgxODI0OS8xMDk1NDk3MC5naWY=/original/svwagk.gif"
-                alt="Mini Tanks screenshot"
-            />
-            <section>
-                <h2>Mini Tanks</h2>
-                <p>
-                    A short p5.js tanks game that features 16 unique levels where the player must defeat all enemy tanks
-                    to move on.
-                    <br />
-                    All graphics drawn in Aseprite; Music and SFX in Famitracker 0CC, levels created in Tiled, and coded
-                    in p5.js
-                    <br />
-                    The game features a custom soundbank manager to load and play files with minimal memory footprint.
-                </p>
-                <a href="https://squiggygames.itch.io/mini-tanks">> Play Mini Tanks on itch.io</a>
-            </section>
-        </article>
-        <hr />
-
-        <article>
-            <img src="goo.png" alt="Goo screenshot" />
-            <section>
-                <h2>Goo</h2>
-                <p>
-                    Goo is a p5.js experiment with an alternative way to tell time, using a tactile "touch"
-                    experience.<br />
-                    The goo starts out very soft and malleable and gets firmer and more volatile as the day goes on.
-                    You're able to get a rough idea of what time it is only by interacting with the goo and listening to
-                    the sound it makes.<br />How solid it feels indicates how late in the day it is, and the pitch of
-                    the sound indicates how far into the hour it is.
-                </p>
-                <a href="projects/goo/">> Launch Goo</a>
-            </section>
-        </article>
-        <hr />
+        
 
         <br />
         <br />
         <br />
         <div class="topButton">
-            <button type="button" onclick="myFunction()">[ scroll to top ]</button>
+            <button type="button" onclick="myFunction()">[ back to top ]</button>
         </div>
         <footer>
             <script type="text/javascript">
@@ -274,5 +180,6 @@
                 }
             </script>
         </footer>
+        <br />
     </body>
 </html>
